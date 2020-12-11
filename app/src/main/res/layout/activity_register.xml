@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8DFDF"
+    android:padding="10dp"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/registerMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/displayNameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Unesite ime i prezime" />
+
+        <EditText
+            android:id="@+id/displayNameInp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Ime i Prezime"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/emailTxt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Unesite vašu email adresu" />
+
+        <EditText
+            android:id="@+id/emailInp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/passwordTxt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Unesite vašu lozinku" />
+
+        <EditText
+            android:id="@+id/passwordInp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Lozinka"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/passwordTxt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Unesite ponovno lozinku" />
+
+        <EditText
+            android:id="@+id/passwordInp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Lozinka"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/registerBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Registriraj se"
+            app:backgroundTint="#ACB5AD" />
+
+        <Button
+            android:id="@+id/loginBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prijavi se"
+            app:backgroundTint="#ACB5AD" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
